@@ -10,10 +10,14 @@
     />
     <title>I am Yueying Shi</title>
     <!--   Style  -->
+    <link rel="icon" type="image/png" href="images/icon/icon_192.png" sizes="192*192"/>
+    <link rel="icon" type="image/png" href="images/icon/icon_32.png" sizes="32*32"/>
+    <link rel="apple-touch-icon" href="/images/icon/icon_180.png"/>
+    <meta name="msapplication-TileImage" content="/images/icon/icon_270.png"/>
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="index">
    
 
     <div class="container">
@@ -24,7 +28,7 @@
             <a href="index.html">Home</a>
           </div>
           <div class="nav_link_wrapper">
-            <a href="interaction.html">Interaction</a>
+            <a href="#interaction">Interaction</a>
           </div>
           <div class="nav_link_wrapper">
             <a href="illustration.html">illustration</a>
@@ -40,38 +44,155 @@
         </div>
       </div>
 
-      <div class = "header">
-        <h1><strong class="color">I am Yueying Shi </strong>
-        </br>UX/ Interaction </br> & Visual Designer</h1>
+      <div class = "index_header">
+        <div class = 'title'>
+          <h1><strong class="color">I am Yueying Shi </strong>
+          </br>UX/ Interaction </br> & Visual Designer</h1>
+        </div>
+      </div>
+
+      <div class="down_arrow">
+        <a href="#interaction">
+          <img src="images/others/next.png" alt="">
+        </a>
+        
       </div>
 
       <div class="content_wrapper">
         <div class="portfolio_items_wrapper">
-          <div class="portfolio_item_wrapper">
-            <div
-              class="portfolio_img_background"
-              style="background-image: url(images/banner/hidenseek.png)"
-            ></div>
-            <div class="text_wrapper">
 
-              <div class="subtitle">
-                <p>Hide and Seek</p>
-              </div>
-              <div class="description">
-                <p>
-                  This AR functional device provides functions like Hide & Seek
-                  game for pedestrians. The experience of waiting for a party
-                  can be ameliorated and people can perceive the city better
-                  through this game.
-                </p>
+          <div class="subtitle" id="interaction">
+            <h2>Interaction</h2>    
+          </div>
 
+          <a href="https://shiyueying.wordpress.com/hide-and-seek-2/">
+            <div class="portfolio_item_wrapper">
+              <div
+                class="portfolio_img_background"
+                style="background-image: url(images/banner/hidenseek.png)"
+              ></div>
+              <div class="text_wrapper">
+  
+                <div class="subtitle">
+                  <p>Hide and Seek</p>
+                </div>
+                <div class="description">
+                  <p>
+                    This AR functional device provides functions like Hide & Seek
+                    game for pedestrians. The experience of waiting for a party
+                    can be ameliorated and people can perceive the city better
+                    through this game.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        
+          </a>
+
+          <a href="https://shiyueying.wordpress.com/with-u/">
+            <div class="portfolio_item_wrapper">
+              <div
+                class="portfolio_img_background"
+                style="background-image: url(images/banner/withu.png)"
+              ></div>
+              <div class="text_wrapper">
+  
+                <div class="subtitle">
+                  <p>With U</p>
+                </div>
+                <div class="description">
+                  <p>
+                    This couples communication app is designed to address issues in long-term relationships
+                     such as loneliness, mistrust, and untimely companionship. 
+                     Key features include time-delayed sending, gift exchange and chat topic assistance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://shiyueying.wordpress.com/bystander/">
+            <div class="portfolio_item_wrapper">
+              <div
+                class="portfolio_img_background"
+                style="background-image: url(images/banner/bystander.png)"
+              ></div>
+              <div class="text_wrapper">
+  
+                <div class="subtitle">
+                  <p>Bystander</p>
+                </div>
+                <div class="description">
+                  <p>
+                    Bystander is a simulation strategy game based on real cyber bullying incidents. It allows players to participate as “observers” and experience the destructive power of public opinion.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://shiyueying.wordpress.com/cherish-2/">
+            <div class="portfolio_item_wrapper">
+              <div
+                class="portfolio_img_background"
+                style="background-image: url(images/banner/cherish.png)"
+              ></div>
+              <div class="text_wrapper">
+  
+                <div class="subtitle">
+                  <p>Cherish</p>
+                </div>
+                <div class="description">
+                  <p>
+                    Our project provides a pet funeral service with the functions of temporary storage, regular recycling, and unified harmless treatment to protect the environment from contamination by pet germs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://shiyueying.wordpress.com/tv-settings-2/">
+            <div class="portfolio_item_wrapper">
+              <div
+                class="portfolio_img_background"
+                style="background-image: url(images/banner/tvsettings.png)"
+              ></div>
+              <div class="text_wrapper">
+  
+                <div class="subtitle">
+                  <p>Smart TV Settings</p>
+                </div>
+                <div class="description">
+                  <p>
+                    This is a iteration based on preverious settings to: 
+                    Optimize the experience of using settings, 
+                    Make it easier for users to find the required settings, 
+                    Make the settings better understood and used
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+       
+
+
+
         </div>
       </div>
 
     </div>
   </body>
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio_item_wrapper");
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("img_darken");
+      });
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("img_darken");
+      });
+    });
+  </script>
 </html>
