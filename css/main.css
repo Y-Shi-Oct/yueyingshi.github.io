@@ -154,11 +154,18 @@ h3 {
     justify-content: space-between;
     margin: 2rem 0rem;
   }
-  nav > .right_side > div {
+  .nav_wrapper > .right_side {
+    display: flex;
+  }
+
+  .nav_wrapper > .right_side > div {
     text-transform: uppercase;
   }
 }
-
+.logo > img {
+  opacity: 0;
+  width: 1rem;
+}
 .nav_wrapper > .left_side {
   display: flex;
 }
