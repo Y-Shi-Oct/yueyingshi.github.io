@@ -157,6 +157,30 @@ footer .my-words {
   height: 480px;
 }
 
+#imageWithU {
+  background-color: #cccccc;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/withu/cover.jpg) no-repeat center center;
+  background-size: cover;
+  height: 480px;
+}
+
+#imageHideNSeek {
+  background-color: #cccccc;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/hidenseek/cover.jpg) no-repeat center center;
+  background-size: cover;
+  height: 480px;
+}
+
+#imageBystander {
+  background-color: #cccccc;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/bystander/cover.jpg) no-repeat center center;
+  background-size: cover;
+  height: 480px;
+}
+
 .paragraph-title {
   font-weight: 600;
 }
@@ -216,17 +240,17 @@ footer .my-words {
   /* border-bottom: 1px solid gray; */
 }
 
-.quote{
+.quote {
   font-style: italic;
   font-size: 1rem;
   line-height: 1.8;
 }
 
-.quote-block{
+.quote-block {
   background-color: #eaeaea;
 }
 
-.quote-box{
+.quote-box {
   max-width: 900px;
 }
 
