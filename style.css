@@ -184,7 +184,7 @@ footer .my-words {
 #imageHideNSeek {
   background-color: #cccccc;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/hidenseek/cover.jpg) no-repeat center center;
+    url("https://img.freepik.com/free-photo/white-short-haired-girl-wears-ring-plays-hide-seek-indoor-photo-brunette-lady-oversize-t-shirt-covering-eyes_197531-21983.jpg?") no-repeat center center;
   background-size: cover;
   height: 480px;
 }
