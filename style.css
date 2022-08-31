@@ -196,6 +196,14 @@ footer .my-words {
   background-size: cover;
   height: 480px;
 }
+#imageCherish {
+  background-color: #cccccc;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1560743173-567a3b5658b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80") no-repeat center center;
+  background-size: cover;
+  height: 480px;
+}
+
 
 .paragraph-title {
   font-weight: 600;
